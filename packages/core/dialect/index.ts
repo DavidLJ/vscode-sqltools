@@ -6,6 +6,7 @@ import PostgreSQL from './pgsql';
 import SQLite from './sqlite';
 import SAPHana from './saphana';
 import CQL from './cql';
+import ExampleDialect from './example-dialect';
 
 const dialects = {
   DB2,
@@ -18,6 +19,7 @@ const dialects = {
   SQLite,
   SAPHana,
   'Cassandra': CQL,
+  ExampleDialect, // add your dialect here to make it availeble for usage
 };
 
 export default dialects;

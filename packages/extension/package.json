@@ -50,7 +50,8 @@
         "sqlplus",
         "sqltools",
         "sap",
-        "saphana"
+        "saphana",
+        "example-diaect"
     ],
     "galleryBanner": {
         "theme": "dark",
@@ -506,7 +507,8 @@
                                     "OracleDB",
                                     "PostgreSQL",
                                     "SAPHana",
-                                    "SQLite"
+                                    "SQLite",
+                                    "ExampleDialect"
                                 ],
                                 "description": "Connection Dialect",
                                 "required": false
