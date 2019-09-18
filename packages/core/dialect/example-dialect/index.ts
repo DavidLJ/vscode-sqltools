@@ -19,10 +19,10 @@ import { DatabaseInterface } from '@sqltools/core/plugin-api';
  *
  * If your driver is not pure JS, consider using deps prop instead.
  */
-import ExampleDialectLib from 'exmaple-dialect-lib';
+import ExampleDialectLib from 'example-dialect-lib';
 
 
-export default class ExampleDialect extends GenericDialect<ExampleDialect.Connection> implements ConnectionDialect {
+export default class ExampleDialect extends GenericDialect<ExampleDialectLib.Connection> implements ConnectionDialect {
 
   /**
    * If you set this prop, the driver will be installed by the user on first run.
@@ -30,7 +30,7 @@ export default class ExampleDialect extends GenericDialect<ExampleDialect.Connec
    */
   public static deps: typeof GenericDialect['deps'] = [{
     type: 'package',
-    name: 'exmaple-dialect-lib',
+    name: 'example-dialect-lib',
     version: '1.0.0',
   }];
 
@@ -38,7 +38,7 @@ export default class ExampleDialect extends GenericDialect<ExampleDialect.Connec
   queries = queries;
 
   private get lib() {
-    return __non_webpack_require__('exmaple-dialect-driver');
+    return __non_webpack_require__('example-dialect-driver');
   }
 
   public async open() {
@@ -66,7 +66,7 @@ export default class ExampleDialect extends GenericDialect<ExampleDialect.Connec
   }
 
   /**
-   * This method should run queries even with multiple statments. Eg.: SELECT 1; SELECT 2;
+   * This method should run queries even with multiple statements. Eg.: SELECT 1; SELECT 2;
    */
   public async query(query: string): Promise<DatabaseInterface.QueryResults[]> {
     const conn = await this.open();

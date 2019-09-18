@@ -19,7 +19,7 @@ const dialects = {
   SQLite,
   SAPHana,
   'Cassandra': CQL,
-  ExampleDialect, // add your dialect here to make it availeble for usage
+  ExampleDialect, // add your dialect here to make it available for usage
 };
 
 export default dialects;

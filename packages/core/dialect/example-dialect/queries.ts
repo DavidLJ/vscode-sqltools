@@ -5,7 +5,7 @@ import { DialectQueries } from '@sqltools/core/interface';
  */
 export default {
   /**
-   * This query should return all infomation (or the most common) about an specific table.
+   * This query should return all information (or the most common) about an specific table.
    */
   describeTable: 'DESCRIBE :table',
   /**
