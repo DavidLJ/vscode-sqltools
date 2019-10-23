@@ -18,4 +18,7 @@ export enum DatabaseDialect {
   OracleDB = 'OracleDB',
   SAPHana = 'SAPHana',
   Cassandra = 'Cassandra',
+
+  // EXAMPLE ONLY
+  ExampleDialect = 'ExampleDialect',
 }
