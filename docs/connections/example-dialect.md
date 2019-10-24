@@ -1,3 +1,9 @@
+---
+name: Example Dialect
+menu: Connection Drivers
+route: /connections/example-dialect
+---
+
 # Example Dialect Start Guide
 
 ## 1. Prerequisites
